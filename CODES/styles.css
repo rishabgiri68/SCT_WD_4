@@ -1,0 +1,86 @@
+body {
+  background-color: #000;
+  
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.main-heading {
+  color: #0011ffb2;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: grid;
+  grid-template-columns: 250px 250px 150px;
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.task-row {
+  display: grid;
+  grid-template-columns: 30px 1fr 130px 140px;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-text,
+.task-date {
+  font-size: 13px;
+  word-break: break-word;
+  color: #f2eeed;
+  overflow: hidden;
+}
+
+.btn-delete,
+.btn-edit {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #007bff;
+}
